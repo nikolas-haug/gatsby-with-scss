@@ -10,23 +10,23 @@
   @include container-styles;
 }
 
-.container-stretch {
+.containerStretch {
   @include container-styles;
 }
 
 // FIXED SIZE CONTAINERS
 
-.container-sm {
+.containerSm {
   @include container-size($x-small, $container-gutter);
   @include container-styles;
 }
 
-.container-med {
+.containerMed {
   @include container-size($small, $container-gutter);
   @include container-styles;
 }
 
-.container-lg {
+.containerLg {
   @include container-size($medium, $container-gutter);
   @include container-styles;
 }

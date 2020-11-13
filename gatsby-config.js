@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-sass']
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        data: '@import "_variables.scss" "_mixins.scss" "_base.scss" "_reset.scss" "_normalize.scss"',
+        includePaths: [
+          'src/styles/sass'
+        ]
+      }
+    }
+  ]
 }
